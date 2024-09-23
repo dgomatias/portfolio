@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    color: white;
+}
+
+body {
+    background-color: #141414;
+}
+
+i {
+    cursor: pointer;
+}
+
+.none {
+    display: none !important;
+}
+
+.open {
+    display: block !important; 
+}
+
+/* Container */
+
+.container {
+    height: 100vh;
+    position: absolute;
+   
+}
+
+/* Menu */
+
+.menu {
+    box-sizing: border-box;
+    width: 100vw;
+    /* background-color: aqua; */
+    padding-top: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+/* Projetos */
+
+
+h3, p {
+    font-family: "Montserrat", system-ui;
+
+}
+
+
+h2 {
+    font-size: 40px;
+    color: #82FF77;
+    font-weight: bold;
+    letter-spacing: 15px;
+    font-family: "Montserrat", system-ui;
+    text-align: center;
+    position: relative; /* Necessário para o alinhamento do ::before */
+}
+
+h2::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 100px;
+    height: 1px; /* Altura da linha */
+    margin: 10px auto 0; /* Centraliza horizontalmente e ajusta a margem superior */
+    position: relative;
+}
+
+/* Card Container */
+
+.card {
+    cursor: pointer;
+    display:  flex;
+    padding: 30px;
+    /* align-items: center; */
+    /* background-color: aqua; */
+    /* text-align: center; */
+}
+
+
+
+.img-card img {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+
+.card h3 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    /* width: 100%; */
+}
+
+.card:hover .click-icon {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+}
+
+.card p {
+    padding-left: 30px;
+    max-width: 500px;
+    font-size: 25px;
+}
+
+
+@media (max-width: 800px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card h3 {
+        margin: 0;
+        order: 1;
+        text-align: center;
+    }
+
+    .img-card {
+        order: 2;
+    }
+
+    .card p{
+        display: none;
+    }
+
+    .card .click-icon {
+        display: none;
+    }
+
+    .img-card {
+        margin: auto;
+    }
+    
+    .card h3 {
+        margin-bottom: 10px;
+        /* background-color: aqua; */
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h2::after {
+        width: 65px;
+    }
+
+    .card p {
+        display: none;
+    }
+
+    .card .click-icon {
+        display: none;
+    }
+
+    .img-card {
+        margin: auto;
+    }
+    .card h3 {
+        margin-bottom: 10px;
+        /* background-color: aqua; */
+    }
+    
+}

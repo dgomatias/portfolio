@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    color: white;
+}
+
+body {
+    background-color: #141414;
+    
+}
+
+i {
+    cursor: pointer;
+}
+
+.none {
+    display: none !important;
+}
+
+.open {
+    display: block !important; 
+}
+
+/* Container */
+
+.container {
+    height: 100vh;
+    position: absolute;
+}
+
+/* Menu */
+
+.menu {
+    box-sizing: border-box;
+    width: 100vw;
+    /* background-color: aqua; */
+    padding-top: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    text-align: right;   
+}
+
+
+
+/* Sobre */
+
+.sobre {
+    box-sizing: border-box;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #82FF77;
+    letter-spacing: 15px;
+    font-family: "Montserrat", system-ui;
+    position: relative; /* Necessário para o alinhamento do ::before */
+}
+
+h2::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 100px;
+    height: 1px; /* Altura da linha */
+    margin: 10px auto 0; /* Centraliza horizontalmente e ajusta a margem superior */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.sobre p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Montserrat", system-ui;
+    font-size: 25px;
+}
+
+.sobre p:last-child {
+    margin-bottom: 30px;
+}
+
+/* Experiência */
+
+.experiencia {  
+    text-align: center;
+
+}
+
+.destaque {
+    font-weight: bold;
+    color: #82FF77;
+}
+
+.experiencia h3 {
+    margin-left: 60px;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Montserrat", system-ui;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.experiencia p {
+    font-size: 25px;
+    font-family: "Montserrat", system-ui;
+    margin-left: 60px;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 30px;
+
+}
+
+.experiencia button {
+    cursor: pointer;
+    border: #82FF77 solid 1px;
+    font-size: 25px;
+    border-radius: 50px;
+    color: #82FF77;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-family: "Montserrat", system-ui;
+    width: 200px;
+}
+
+.experiencia button:hover {
+    transition: 0.3s;
+    background-color: #82FF77;
+    border: #82FF77 solid 1px;
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .experiencia h3 {
+        text-align: center;
+        /* background-color: aqua; */
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .experiencia p {
+        
+        margin: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h2::after {
+        width: 65px;
+    }
+
+    .sobre p {
+        font-size: 20px;
+    }
+
+    .experiencia h3 {
+        font-size: 20px;
+        text-align: center;
+        /* background-color: aqua; */
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .experiencia p {
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .experiencia button {
+        font-size: 20px;
+    }
+}
+

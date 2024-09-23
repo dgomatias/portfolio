@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/header.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    
+    <div class="menu-isometric none">
+        <i onclick="showMenu()" class="fa-solid fa-x fa-2x"></i> 
+        <ul>
+            <li style="--i:3"><a href="index.html">Home</a></li>
+            <li style="--i:2"><a href="sobre.html">Sobre</a></li>
+            <li style="--i:1"><a href="projetos.html">Projetos</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <i onclick="showMenu()" class="fa-solid fa-bars fa-2x menu-icon"></i>
+        </div>
+
+        <div class="content">
+            <h1><span id="typing-h1"></span></h1>
+            <h2><span id="typing-h2"></span></h2>
+        </div>
+        
+        <div class="links">
+            <a target="_blank" href="https://github.com/dgomatias/portfolio"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a  target="_blank" href="https://www.linkedin.com/in/dgomatias/"><i class="fa-brands fa-linkedin fa-2x"></i></a> 
+            <a target="" href="mailto:dgomatias.dev@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a> 
+        </div>
+    </div>
+
+    <script src="js/typing.js" defer></script> <!-- Arquivo JavaScript para o efeito -->
+</body>
+</html>
